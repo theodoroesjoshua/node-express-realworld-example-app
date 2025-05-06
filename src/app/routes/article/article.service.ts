@@ -63,7 +63,8 @@ const buildFindAllQuery = (query: any, id: number | undefined) => {
     });
   }
 
-  return queries;
+  // return queries;
+  return [];
 };
 
 export const getArticles = async (query: any, id?: number) => {

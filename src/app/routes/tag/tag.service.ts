@@ -3,7 +3,7 @@ import { Tag } from './tag.model';
 
 const getTags = async (id?: number): Promise<string[]> => {
   const queries = [];
-  queries.push({ demo: true });
+  // queries.push({ demo: true });
 
   if (id) {
     queries.push({
