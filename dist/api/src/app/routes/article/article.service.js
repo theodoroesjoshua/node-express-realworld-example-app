@@ -49,11 +49,6 @@ const buildFindAllQuery = (query, id) => {
   const queries = [];
   const orAuthorQuery = [];
   const andAuthorQuery = [];
-  orAuthorQuery.push({
-    demo: {
-      equals: true
-    }
-  });
   if (id) {
     orAuthorQuery.push({
       id: {
@@ -95,7 +90,7 @@ const buildFindAllQuery = (query, id) => {
       }
     });
   }
-  return queries;
+  return [];
 };
 const getArticles = async (query, id) => {
   const andQueries = buildFindAllQuery(query, id);

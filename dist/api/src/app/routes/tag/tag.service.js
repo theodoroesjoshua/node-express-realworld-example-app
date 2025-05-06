@@ -33,14 +33,6 @@ module.exports = __toCommonJS(tag_service_exports);
 var import_prisma_client = __toESM(require("../../../prisma/prisma-client"));
 const getTags = async (id) => {
   const queries = [];
-  queries.push({ demo: true });
-  if (id) {
-    queries.push({
-      id: {
-        equals: id
-      }
-    });
-  }
   const tags = await import_prisma_client.default.tag.findMany({
     where: {
       articles: {
