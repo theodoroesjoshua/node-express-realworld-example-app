@@ -5,13 +5,13 @@ const getTags = async (id?: number): Promise<string[]> => {
   const queries = [];
   // queries.push({ demo: true });
 
-  if (id) {
-    queries.push({
-      id: {
-        equals: id,
-      },
-    });
-  }
+  // if (id) {
+  //   queries.push({
+  //     id: {
+  //       equals: id,
+  //     },
+  //   });
+  // }
 
   const tags = await prisma.tag.findMany({
     where: {
