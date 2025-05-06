@@ -10,11 +10,11 @@ const buildFindAllQuery = (query: any, id: number | undefined) => {
   const orAuthorQuery = [];
   const andAuthorQuery = [];
 
-  orAuthorQuery.push({
-    demo: {
-      equals: true,
-    },
-  });
+  //orAuthorQuery.push({
+  //  demo: {
+  //    equals: true,
+  //  },
+  //});
 
   if (id) {
     orAuthorQuery.push({
